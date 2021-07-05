@@ -1,0 +1,19 @@
+https://en.wikipedia.org/wiki/Loop_device
+https://askubuntu.com/questions/906581/what-is-dev-loopx
+
+/dev/loop* are loop devices making plain files accessible as block devices. They are typically used for mounting 
+disk images.
+
+In Unix-like operating systems, a loop device, vnd (vnode disk), or lofi (loop file interface) is a pseudo-device 
+that makes a computer file accessible as a block device.
+
+Files of this kind are often used for CD ISO images and floppy disk images. Mounting a file containing a file 
+system via such a loop mount makes the files within that file system accessible.
+
+After mounting a file that holds a file system, the files in that system can be accessed through the usual file 
+system interface of the operating system, without any need for special functionality, such as reading and writing 
+to ISO images, in applications.
+
+The device is called a "loop" device and device nodes are usually named /dev/loop0, /dev/loop1, etc. They can be 
+created with makedev for the static device directory, dynamically by the facilities of the device file system 
+(udev), or directly with mknod. 

@@ -1,0 +1,16 @@
+Rama Krishna Katta8:15 PM
+1. First we need to create some memory to store the data of our guest machine so this can be done by below command.
+     qemu-img create -f qcow2 image_name.img size
+
+    (Note: need to give image name and size i.e10G or something)
+
+        example: qemu-img create -f qcow2 my_image.img 10G
+
+2. After creating the image run the following command to emulate the device
+
+qemu_system_x86_64 -m 1024 -boot -d -enable -kvm -net nic -hda image_name.img -cdrom isofile(path of the iso file)
+
+example : qemu
+
+https://wiki.debian.org/QEMU
+

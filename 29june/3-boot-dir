@@ -1,0 +1,16 @@
+https://en.wikipedia.org/wiki//boot/
+
+/boot/ directory holds files used in booting the operating system depending on the boot loader, most commonly (on Linux) LILO or GRUB.
+
+Linux
+vmlinux – the Linux kernel[2]
+initrd.img – a temporary file system, used prior to loading the kernel[3]
+System.map – a symbol lookup table[4]
+
+/boot/ is often simply a directory on the main (or only) hard drive partition. However, it may be a separate partition. A separate 
+partition is generally only used when bootloaders are incapable of reading the main filesystem (e.g. SILO does not recognize XFS) or 
+other problems not easily resolvable by users.
+
+https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s05.html
+
+
